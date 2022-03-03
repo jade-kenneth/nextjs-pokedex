@@ -14,3 +14,27 @@ a {
 * {
   box-sizing: border-box;
 }
+.pagination_list.active {
+  background-color: cyan;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pagination_ul {
+  display: flex;
+
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.pagination_list {
+  background-color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+}
+.pagination_list:hover {
+  cursor: pointer;
+}

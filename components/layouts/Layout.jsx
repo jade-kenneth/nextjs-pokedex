@@ -1,0 +1,52 @@
+import { Box, Flex, Grid } from "@chakra-ui/react";
+import Footer from "components/Footer";
+import Header from "components/Header";
+import Image from "next/image";
+import React from "react";
+import pokeball from "public/pokeball.png";
+const Layout = ({ type, children }) => {
+  return (
+    <Grid templateRows="10vh auto" position="relative" zIndex="0">
+      <Header type={type} />
+      <Flex
+        position="absolute"
+        left="0px"
+        top="50%"
+        width="200px"
+        height="200px"
+        zIndex="-1"
+        align="center"
+        justify="center"
+      >
+        <Image src={pokeball} alt="ball" layout="fill" />
+      </Flex>
+      <Flex
+        position="absolute"
+        right="20%"
+        top="0px"
+        width="200px"
+        height="200px"
+        zIndex="-1"
+        align="center"
+        justify="center"
+      >
+        <Image src={pokeball} layout="fill" alt="ball" />
+      </Flex>
+      <Flex
+        position="absolute"
+        right="0px"
+        bottom="0px"
+        width="200px"
+        height="200px"
+        zIndex="-1"
+        align="center"
+        justify="center"
+      >
+        <Image src={pokeball} layout="fill" alt="ball" />
+      </Flex>
+      <Box>{children}</Box>
+    </Grid>
+  );
+};
+
+export default Layout;
