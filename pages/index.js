@@ -61,6 +61,10 @@ const PokemonHome = () => {
           </Button>
         )}
       </Flex>
+      <Flex gap="5px" position="absolute" left="5px" bottom="5px">
+        <Text> developed by: </Text>
+        <Text fontWeight="bolder">Jade Kenneth S. Darunday</Text>
+      </Flex>
     </Center>
   );
 };
