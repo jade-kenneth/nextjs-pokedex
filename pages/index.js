@@ -39,7 +39,7 @@ const PokemonHome = () => {
       <Flex align="center" justify="center" direction="column" w="100%">
         {/* <Image src={logo} alt="logo" width={500} height={200} /> */}
         <Text fontSize="2xl" fontWeight="bolder" m={2} color="tomato">
-          TYPE OF PRE-RENDERING
+          TYPES OF PRE-RENDERING
         </Text>
         {info === null ? (
           <Flex direction="column" gap="10px">
