@@ -73,7 +73,7 @@ const PokemonList = ({ pokemons }) => {
         })}
       </Flex>
       <Flex align="center" justify="center" direction="column" w="100%">
-        <SwitchButtonAndLoader type="ssr" hidden={false} />
+        <SwitchButtonAndLoader type="ssg" hidden={false} />
         <Pagination
           numberPerPage={numberPerPage}
           totalPokemon={pokemons.length}
