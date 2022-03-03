@@ -46,7 +46,7 @@ const EachPokemon = ({ children, pokemonData, number, type }) => {
                   <Image src={pokeball} alt="ball" width={100} height={100} />
                 </Box>
                 <Image
-                  src={` ${pokemonData.image.trim()}`}
+                  src={pokemonData.image}
                   alt={`${children}`}
                   placeholder="blur"
                   blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mO8/fR2PQAIWgMc+QDkCgAAAABJRU5ErkJggg=="
